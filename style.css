@@ -1,0 +1,301 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.padding-bottom {
+    padding-bottom: 35px;
+}
+
+.paddingTop {
+    padding-top: 15px;
+}
+
+.priceColor{
+    padding: 10px;
+    color: orangered;
+}
+
+.bikeFont {
+    font-family: 'Lato',sans-serif,Arial,sans-serif;
+    font-size: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoName {
+    font-size: 50px;
+    font-family: 'Lato',sans-serif,Arial,sans-serif;
+}
+
+.shoppingInfo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.padding{
+    padding-left: 50px;
+}
+
+.firstLine, .secondLine, .thirdLine {
+    height: 2px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0px;
+    transition: 0.5s;
+}
+
+.headerSize {
+    height: 100px;
+}
+
+.info{
+    height: 60px;
+    background-color:rgb(14, 14, 14);
+}
+
+.paddingRight{
+    padding-right: 500px;
+}
+
+input {
+    color: transparent;
+    padding-left: 10px;
+    font-family:sans-serif;
+    height: 40px;
+    width: 400px;
+    border:1.5px solid lightgray;
+    background-image: url("icon-search.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-image: url("wallpaper.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border: 0;
+    background-color: orangered;
+    font-size: 15px;
+    font-family: 'Lato',sans-serif,Arial,sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: orangered;
+}
+
+li{
+    color: rgb(167, 167, 167);
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.image {
+    background-image: url("https://bikesport.jollyany.co/templates/tz_bike_sport/images/shadow.png");
+    background-position: center;
+    background-size: 40%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+}
+
+.bikeImage {
+    height: 400px;
+    width: 600px;
+}
+
+.displayBlock {
+    display: inline-block;
+    width: 100%;
+    padding-top: 5%;
+}
+.inlineBlock{
+    display: inline-block;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.divAlign{
+    text-align: center;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: space-around;
+}
+.displayFlexColmn {
+    display: flex;
+    flex-direction: column;
+}
+
+.paddingLeft{
+    font-size: 20px;
+    display: flex;
+    padding-left: 100px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.color2 {
+    color: rgb(167, 167, 167);
+}
+
+.color2:hover {
+    color: orangered;
+}
+
+.fontFamily {
+    font-family: 'Lato',sans-serif,Arial,sans-serif;
+}
+.size{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.size2{
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: rgb(167, 167, 167);
+}
+
+.size3 {
+    padding-top: 75px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    font-size: 25px;
+}
+
+.center {
+    font-size: 50px;
+    font-family: 'Lato',sans-serif,Arial,sans-serif;
+    color: white;
+}
+
+.changeLine .firstLine {
+    transform: translate(0,2px) rotate(-45deg);
+}
+
+.color{
+    color: rgb(173, 173, 173);
+}
+
+.changeLine .secondLine {
+    opacity: 0;
+}
+
+.changeLine .thirdLine {
+    transform: translate(0,-10px) rotate(45deg);
+}
+
+@import url('https://css.gg/heart.css');
+
+.gg-heart,
+.gg-heart::after {
+    border: 2px solid;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 10px;
+    height: 8px;
+    border-bottom: 0px
+}
+.gg-heart {
+    box-sizing: border-box;
+    position: relative;
+    transform:
+        translate(
+            calc(-20px / 2 * var(--ggs,1)),
+            calc(-6px / 2 * var(--ggs,1))
+        )
+        rotate(-45deg)
+        scale(var(--ggs,1));
+    display: block
+}
+.gg-heart::after,
+.gg-heart::before {
+    content: "";
+    display: flex;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-heart::after {
+    right: -9px;
+    transform: rotate(90deg);
+    top: 5px
+}
+.gg-heart::before {
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    left: -2px;
+    top: 3px
+}
+
+@import url('https://css.gg/shopping-bag.css');
+
+.gg-shopping-bag {
+    transform: scale(var(--ggs,1))
+}
+.gg-shopping-bag,
+.gg-shopping-bag::after {
+    box-sizing: border-box;
+    
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 3px
+}
+.gg-shopping-bag::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top: 0;
+    top: 2px;
+    left: 3px
+}
