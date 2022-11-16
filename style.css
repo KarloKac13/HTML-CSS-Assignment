@@ -4,53 +4,172 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: 'Lato',sans-serif,Arial,sans-serif;
 }
+
+input {
+    padding-left: 10px;
+    height: 40px;
+    width: 400px;
+    border:1.5px solid lightgray;
+    background-image: url("icon-search.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border: 0;
+    background-color: orangered;
+    font-size: 15px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px 0px darkorange;
+    background-color: lightgrey;
+    color: orangered;
+}
+
+li{
+    color: rgb(167, 167, 167);
+    padding-left: 15px;
+}
+
+a {
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
 .flexColumn {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding-top: 20px;
 }
 
-.padding-bottom {
-    padding-bottom: 35px;
-}
-
-.paddingTop {
-    padding-top: 15px;
-}
-
-.priceColor{
-    padding: 10px;
-    color: orangered;
-}
-
-.bikeFont {
-    font-family: 'Lato',sans-serif,Arial,sans-serif;
-    font-size: 20px;
-}
-
-.header{
+.flexRow{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .logoName {
-    font-size: 50px;
-    font-family: 'Lato',sans-serif,Arial,sans-serif;
+    text-shadow: 5px 10px 5px grey;
+    font-size: 70px;
+    font-family: 'Black Ops One', cursive;
 }
 
-.shoppingInfo{
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.headerSize {
+    height: 100px;
 }
 
-.padding{
+.menuItemStyle{
+    height: 60px;
+    background-color:rgb(14, 14, 14);
+}
+
+.iconColor {
+    color: rgb(167, 167, 167);
+}
+
+.menuPaddingRight{
+    padding-right: 500px;
+}
+
+.menuPadding{
     padding-left: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url("wallpaper.jpg");
+    background-size: 100% 100%;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.perksSize{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.perksSize2{
+    font-size: 15px;
+    color: rgb(167, 167, 167);
+}
+
+.shadowImage {
+    background-image: url("https://bikesport.jollyany.co/templates/tz_bike_sport/images/shadow.png");
+    background-position: center;
+    background-size: 40%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 50px;
+    left: 0;
+    padding-bottom: 35px;
+}
+
+.featuredProductsSize {
+    padding-top: 75px;
+    padding-left: 100px;
+    font-size: 25px;
+}
+
+.productOptionsPadding{
+    font-size: 20px;
+    display: flex;
+    padding-left: 100px;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.inlineBlockStyle{
+    padding-top: 5%;
+    text-align: center;
+}
+
+.paddingTop {
+    padding-top: 20px;
+}
+
+.paddingBottom {
+    padding-bottom: 20px;
+}
+
+.bikeImage {
+    height: 300px;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.priceColor{
+    padding: 15px;
+    color: orangered;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.width100 {
+    width: 100%;
 }
 
 .firstLine, .secondLine, .thirdLine {
@@ -61,164 +180,8 @@ html, body {
     transition: 0.5s;
 }
 
-.headerSize {
-    height: 100px;
-}
-
-.info{
-    height: 60px;
-    background-color:rgb(14, 14, 14);
-}
-
-.paddingRight{
-    padding-right: 500px;
-}
-
-input {
-    color: transparent;
-    padding-left: 10px;
-    font-family:sans-serif;
-    height: 40px;
-    width: 400px;
-    border:1.5px solid lightgray;
-    background-image: url("icon-search.png");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 95% 50%;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 100%;
-    background-image: url("wallpaper.jpg");
-    background-size:cover;
-    background-position:center;
-}
-
-button {
-    height: 40px;
-    width: 150px;
-    border: 0;
-    background-color: orangered;
-    font-size: 15px;
-    font-family: 'Lato',sans-serif,Arial,sans-serif;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: white;
-    color: orangered;
-}
-
-li{
-    color: rgb(167, 167, 167);
-    padding-left: 15px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.image {
-    background-image: url("https://bikesport.jollyany.co/templates/tz_bike_sport/images/shadow.png");
-    background-position: center;
-    background-size: 40%;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    left: 0;
-}
-
-.bikeImage {
-    height: 400px;
-    width: 600px;
-}
-
-.displayBlock {
-    display: inline-block;
-    width: 100%;
-    padding-top: 5%;
-}
-.inlineBlock{
-    display: inline-block;
-}
-
-.textAlign {
-    text-align: center;
-}
-
-.divAlign{
-    text-align: center;
-}
-
-.displayFlex {
-    display: flex;
-    justify-content: space-around;
-}
-.displayFlexColmn {
-    display: flex;
-    flex-direction: column;
-}
-
-.paddingLeft{
-    font-size: 20px;
-    display: flex;
-    padding-left: 100px;
-}
-
-.cursor{
-    cursor: pointer;
-}
-
-.color2 {
-    color: rgb(167, 167, 167);
-}
-
-.color2:hover {
-    color: orangered;
-}
-
-.fontFamily {
-    font-family: 'Lato',sans-serif,Arial,sans-serif;
-}
-.size{
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-.size2{
-    font-size: 15px;
-    padding-bottom: 20px;
-    color: rgb(167, 167, 167);
-}
-
-.size3 {
-    padding-top: 75px;
-    padding-bottom: 20px;
-    padding-left: 100px;
-    font-size: 25px;
-}
-
-.center {
-    font-size: 50px;
-    font-family: 'Lato',sans-serif,Arial,sans-serif;
-    color: white;
-}
-
 .changeLine .firstLine {
     transform: translate(0,2px) rotate(-45deg);
-}
-
-.color{
-    color: rgb(173, 173, 173);
 }
 
 .changeLine .secondLine {
@@ -273,6 +236,10 @@ a {
     top: 3px
 }
 
+.gg-heart:hover {
+    color: orangered
+}
+
 @import url('https://css.gg/shopping-bag.css');
 
 .gg-shopping-bag {
@@ -298,4 +265,8 @@ a {
     border-top: 0;
     top: 2px;
     left: 3px
+}
+
+.gg-shopping-bag:hover {
+    color: orangered;
 }
