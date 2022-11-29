@@ -8,15 +8,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="inlineBlock headerSize width100">
-            <img class="inlineBlock" src="logo.png">
-            <input class="inlineBlock" type="text" placeholder="Search for product">
+        <div class="flexWrap headerSize width100">
+            <img src="logo.png">
+            <input type="text" placeholder="Search for the product">
         </div>
         <div class="flexRow2 menuItemStyle iconColor">
-            <div class="cursor" onclick="changeMenuStyle(this)">
-                <div class="firstLine"></div>
-                <div class="secondLine"></div>
-                <div class="thirdLine"></div>
+            <div class="dropdownContent">
+                <button class="flexColumn dropdownBtn cursor">
+                    <div>
+                        <div class="firstLine"></div>
+                        <div class="secondLine"></div>
+                        <div class="thirdLine"></div>
+                    </div>
+                </button>
+                <div class="dropdownFlexColumn dropdownItem">
+                    <a href="#">On-Road</a>
+                    <a href="#">X-Road</a>
+                    <a href="#">Off-Road</a>
+                    <a href="#">BMX</a>
+                </div>
             </div>
             <div class="flexRow">
                 <div>
@@ -30,22 +40,21 @@
         </div>
         <div class="content width100">
             <img class="objectFitWallpaper" src="wallpaper.jpg">
-            <div class="relativePosition">COLLECTION FOR BIKE</div>
-            <br>
-            <button class="relativePosition"><b>SHOP NOW</b></button>
+            <div class="relativePosition paddingBottom">COLLECTION FOR BIKE</div>
+            <button class="btn relativePosition"><b>SHOP NOW</b></button>
         </div>
-        <div class="flexColumn paddingTop">
+        <div class="flexColumn paddingTop textAlign">
             <div>
-                <div class="perksSize paddingTop"><b>FREE UK DELIVERY</b></div>
-                <div class="perksSize2 paddingBottom">International delivery available</div>
+                <div class="infoRow1 paddingTop"><b>FREE UK DELIVERY</b></div>
+                <div class="infoRow2 paddingBottom">International delivery available</div>
             </div>
             <div>
-                <div class="perksSize paddingTop"><b>GIFT CARDS & WRAPPING</b></div>
-                <div class="perksSize2 paddingBottom">The perfect way to bring a smile</div>
+                <div class="infoRow1 paddingTop"><b>GIFT CARDS & WRAPPING</b></div>
+                <div class="infoRow2 paddingBottom">The perfect way to bring a smile</div>
             </div>
             <div>
-                <div class="perksSize paddingTop"><b>QUALIFIED OPTICIANS</b></div>
-                <div class="perksSize2 paddingBottom">Prescription Experts</div>
+                <div class="infoRow1 paddingTop"><b>QUALIFIED OPTICIANS</b></div>
+                <div class="infoRow2 paddingBottom">Prescription Experts</div>
                 <div class="shadowImage width100"></div>
             </div>
         </div>
@@ -59,29 +68,28 @@
             <li></li>
             <a href="#">BMX</a>
         </div>
-        <div class="inlineBlock width100">
-            <div class="inlineBlock inlineBlockStyle">
-                    <img class="objectFit" src="propel-advanced-sl-0.jpg">
-                <div>
-                    <div class="inlineBlock paddingTop">Propel Advanced SL 0</div>
+        <div class="flexWrap">
+            <div>
+                <img class="objectFit" src="propel-advanced-sl-0.jpg">
+                <div class="textAlign">
+                    <div>Propel Advanced SL 0</div>
                     <div class="priceColor">$900.00</div>
                 </div>
             </div>
-            <div class="inlineBlock inlineBlockStyle">
-                    <img class="objectFit" src="defy-advanced-2.jpg">
-                <div>
-                    <div class="inlineBlock paddingTop">Defy Advanced SL</div>
+            <div>
+                <img class="objectFit" src="defy-advanced-2.jpg">
+                <div class="textAlign">
+                    <div>Defy Advanced SL</div>
                     <div class="priceColor">$1,770.00</div>
                 </div>
             </div>
-            <div class="inlineBlock inlineBlockStyle">
-                    <img class="objectFit" src="fast-road-co-max.jpg">
-                <div>
-                    <div class="inlineBlock paddingTop">FastRoad CoMax</div>
+            <div>
+                <img class="objectFit" src="fast-road-co-max.jpg">
+                <div class="textAlign">
+                    <div>FastRoad CoMax</div>
                     <div class="priceColor">$1,560.00</div>
                 </div>
-            </div> 
+            </div>
         </div>
-        <script src="main.js" ></script>
     </body>
 </html>

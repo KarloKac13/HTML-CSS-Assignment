@@ -9,28 +9,12 @@ html, body {
 
 input {
     height: 40px;
-    width: 450px;
+    width: 400px;
     border:1.5px solid lightgray;
     background-image: url("icon-search.png");
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
-}
-
-button {
-    height: 40px;
-    width: 150px;
-    border: 0;
-    background-color: orangered;
-    font-size: 15px;
-    color: lightgray;
-    cursor: pointer;
-}
-
-button:hover {
-    box-shadow: 0px 0px 10px 0px darkorange;
-    background-color: lightgrey;
-    color: orangered;
 }
 
 li{
@@ -47,32 +31,11 @@ a:hover {
     color: orangered;
 }
 
-.relativePosition {
-    position: relative;
-}
-
-.headerStyles {
-    padding: 13px;
-}
-
-.objectFit {
-    object-fit:contain;
-    height: 300px;
-    width: 300px;
-}
-
-.flexColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.flexRow2{
+.flexWrap {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .flexRow{
@@ -81,9 +44,25 @@ a:hover {
     align-items: center;
 }
 
+.flexRow2{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .headerSize {
     height: 100px;
-    text-align: center;
+}
+
+.width100 {
+    width: 100%;
 }
 
 .menuItemStyle{
@@ -96,6 +75,73 @@ a:hover {
     color: rgb(167, 167, 167);
 }
 
+.cursor {
+    cursor: pointer;
+}
+
+.dropdownFlexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.dropdownContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdownContent .firstLine, .secondLine, .thirdLine {
+    height: 2px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0px;
+    transition: 0.5s;
+}
+
+.dropdownContent:hover .firstLine {
+    transform: translate(0px,4.5px) rotate(-45deg);
+}
+
+.dropdownContent:hover .secondLine {
+    opacity: 0;
+}
+
+ .dropdownContent:hover .thirdLine {
+    transform: translate(0px,-7px) rotate(45deg);
+}
+
+.dropdownContent .dropdownFlexColumn {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.dropdownContent:hover .dropdownFlexColumn {
+    visibility: visible;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.dropdownBtn {
+    background-color: rgb(14, 14, 14);
+    border-style: none;
+}
+
+.dropdownItem {
+    height: 200px;
+    width: 100px;
+    background-color:rgb(14, 14, 14);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
 .menuPadding{
     padding-left: 50px;
 }
@@ -106,8 +152,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 300px;
-    /* background-image: url("wallpaper.jpg");
-    background-size: 100% 100%; */
     font-size: 50px;
     color: whitesmoke;
 }
@@ -119,12 +163,44 @@ a:hover {
     width: 100%;
 }
 
-.perksSize{
+.relativePosition {
+    position: relative;
+}
+
+.btn {
+    height: 40px;
+    width: 150px;
+    border: 0;
+    background-color: orangered;
+    font-size: 15px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px 0px darkorange;
+    background-color: lightgrey;
+    color: orangered;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.paddingBottom {
+    padding-bottom: 20px;
+}
+
+.paddingTop {
+    padding-top: 25px;
+}
+
+.infoRow1{
     font-size: 20px;
     padding-bottom: 10px;
 }
 
-.perksSize2{
+.infoRow2{
     font-size: 15px;
     color: rgb(167, 167, 167);
 }
@@ -150,57 +226,19 @@ a:hover {
 .productOptionsPadding{
     font-size: 20px;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 100px;
 }
 
-.inlineBlock{
-    display: inline-block;
-}
-
-.inlineBlockStyle{
-    text-align: center;
-    padding-left: 13%;
-}
-
-.paddingTop {
-    padding-top: 25px;
-}
-
-.paddingBottom {
-    padding-bottom: 20px;
+.objectFit {
+    object-fit:contain;
+    height: 300px;
+    width: 300px;
 }
 
 .priceColor{
-    padding: 15px;
+    padding-top: 10px;
     color: orangered;
-}
-
-.cursor{
-    cursor: pointer;
-}
-
-.width100 {
-    width: 100%;
-}
-
-.firstLine, .secondLine, .thirdLine {
-    height: 2px;
-    width: 20px;
-    background-color: rgb(255, 255, 255);
-    margin: 4px 0px;
-    transition: 0.5s;
-}
-
-.changeLine .firstLine {
-    transform: translate(0,2px) rotate(-45deg);
-}
-
-.changeLine .secondLine {
-    opacity: 0;
-}
-
-.changeLine .thirdLine {
-    transform: translate(0,-10px) rotate(45deg);
 }
 
 @import url('https://css.gg/heart.css');
@@ -214,6 +252,7 @@ a:hover {
     height: 8px;
     border-bottom: 0px
 }
+
 .gg-heart {
     box-sizing: border-box;
     position: relative;
@@ -226,6 +265,7 @@ a:hover {
         scale(var(--ggs,1));
     display: block
 }
+
 .gg-heart::after,
 .gg-heart::before {
     content: "";
@@ -233,11 +273,13 @@ a:hover {
     box-sizing: border-box;
     position: absolute
 }
+
 .gg-heart::after {
     right: -9px;
     transform: rotate(90deg);
     top: 5px
 }
+
 .gg-heart::before {
     width: 11px;
     height: 11px;
@@ -256,6 +298,7 @@ a:hover {
 .gg-shopping-bag {
     transform: scale(var(--ggs,1))
 }
+
 .gg-shopping-bag,
 .gg-shopping-bag::after {
     box-sizing: border-box;
@@ -265,6 +308,7 @@ a:hover {
     border: 2px solid;
     border-radius: 3px
 }
+
 .gg-shopping-bag::after {
     content: "";
     position: absolute;
