@@ -1,0 +1,5 @@
+1. Made first commit.
+2. Fixed some issues with responsiveness.
+3. Workaround with transitions and hovers.
+4. Removed JS file and onclick function since it was not needed after
+implementing transitions and hovers.
